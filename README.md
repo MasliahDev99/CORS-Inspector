@@ -1,5 +1,7 @@
 # CORS Inspector
 
+![Imagen_de_la_web](./img/CorsInspector.png)
+
 CORS Inspector es una herramienta web sencilla que permite analizar la configuración de políticas CORS de cualquier servidor. Su objetivo es ayudar a desarrolladores y equipos de seguridad a identificar rápidamente si un endpoint tiene habilitados los encabezados CORS y cómo están configurados.
 
 ## Estado del proyecto
@@ -30,6 +32,28 @@ La interfaz es muy sencilla: el usuario ingresa una URL en el campo de texto y p
 - **Frontend:** React + Vite + Tailwind CSS
 - **Backend:** Python + FastAPI + httpx
 
+---
+
+## Instalación y ejecución
+
+### 1. Clonar repositorio 
+```bash
+  git clone https://github.com/MasliahDev99/CORS-Inspector.git
+  cd CORS-Inspector
+```
+### 2. Frontend
+```bash
+  cd Client
+  npm install
+  npm run dev
+```
+### 3. Backend
+```bash
+ cd Server
+ pip install -r requirements.txt
+ uvicorn src.app:app --reload
+```
+
 
 ## Uso
 
@@ -37,5 +61,6 @@ La interfaz es muy sencilla: el usuario ingresa una URL en el campo de texto y p
 2. Haz clic en "Analizar".
 3. Visualiza los resultados sobre los encabezados CORS y el estado de la configuración.
 
----
-![Imagen_de_la_web](./img/CorsInspector.png)
+
+
+
